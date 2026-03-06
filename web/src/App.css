@@ -1,0 +1,306 @@
+.app-root {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-app {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+/* Splash Screen */
+.splash-screen {
+    position: fixed;
+    inset: 0;
+    background: var(--bg-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.splash-card {
+    background: var(--card-bg);
+    padding: 3rem;
+    border-radius: 32px;
+    text-align: center;
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    max-width: 450px;
+    width: 90%;
+}
+
+.splash-logo {
+    color: var(--primary);
+    margin-bottom: 2rem;
+}
+
+.splash-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.splash-form input {
+    padding: 1rem;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.splash-form button {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 16px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+/* Modais */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.modal-card {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 24px;
+    width: 90%;
+    max-width: 500px;
+    border: 1px solid var(--glass-border);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.modal-header h3 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--primary);
+}
+
+.modal-header button {
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    cursor: pointer;
+}
+
+.modal-body ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Nav */
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left,
+.nav-right {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.nav-btn,
+.audio-toggle {
+    background: var(--card-bg);
+    border: 1px solid var(--glass-border);
+    color: var(--text-muted);
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.nav-btn:hover,
+.audio-toggle:hover {
+    background: var(--glass-border);
+    color: white;
+}
+
+/* App Header */
+.header h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    background: linear-gradient(135deg, #818cf8 0%, #6366f1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Input Section */
+.card {
+    background: var(--card-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 24px;
+    padding: 2rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+textarea,
+input {
+    background: rgba(15, 23, 42, 0.5);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    padding: 0.8rem;
+    color: white;
+    font-family: 'Outfit';
+}
+
+/* Result Card */
+.result-card {
+    border-left: 4px solid var(--primary);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.token-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+}
+
+.token-actions button {
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+
+.token-actions button:hover {
+    background: var(--glass-border);
+    color: var(--primary);
+}
+
+.token-display {
+    background: #0f172a;
+    padding: 1.2rem;
+    border-radius: 12px;
+    word-break: break-all;
+    font-size: 0.9rem;
+    color: #818cf8;
+}
+
+/* Button Generate & Copy */
+.btn-generate {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 16px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s;
+    width: 100%;
+}
+
+.btn-generate:hover {
+    transform: scale(1.02);
+    filter: brightness(1.1);
+}
+
+.btn-copy {
+    background: rgba(255, 255, 255, 0.05);
+    color: white;
+    border: 1px solid var(--glass-border);
+    padding: 0.8rem;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-copy.copied {
+    background: #10b981;
+}
+
+/* Footer Bar */
+.footer-bar {
+    text-align: center;
+    padding: 1rem;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* Pause Overlay */
+.pause-card {
+    background: var(--card-bg);
+    padding: 3rem;
+    border-radius: 32px;
+    text-align: center;
+}
+
+.pause-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.btn-action {
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn-danger {
+    background: #fb7185;
+    color: white;
+}
