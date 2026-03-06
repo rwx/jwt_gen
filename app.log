@@ -263,3 +263,33 @@
 {"timestamp":"2026-03-06T11:05:29.969Z","level":"INFO","message":"test info"}
 {"timestamp":"2026-03-06T11:05:29.969Z","level":"WARN","message":"test warn"}
 {"timestamp":"2026-03-06T11:05:29.969Z","level":"ERROR","message":"test error"}
+{"timestamp":"2026-03-06T12:12:26.487Z","level":"INFO","message":"Iniciando geração de token","data":{"payload":{"user":"test-user","role":"editor"},"expiresIn":"2h"}}
+{"timestamp":"2026-03-06T12:12:26.514Z","level":"INFO","message":"Token gerado com sucesso"}
+{"timestamp":"2026-03-06T12:12:26.536Z","level":"ERROR","message":"Erro na geração de token","data":{"error":"JWT_SECRET is not defined"}}
+{"timestamp":"2026-03-06T12:12:26.540Z","level":"INFO","message":"Iniciando geração de token","data":{"payload":{"id":123,"nested":{"key":"value"},"tags":["a","b"]},"expiresIn":"1h"}}
+{"timestamp":"2026-03-06T12:12:26.547Z","level":"INFO","message":"Token gerado com sucesso"}
+{"timestamp":"2026-03-06T12:12:26.563Z","level":"INFO","message":"Iniciando geração de token","data":{"payload":{"user":"guest","role":"admin"},"expiresIn":"1h"}}
+{"timestamp":"2026-03-06T12:12:26.565Z","level":"INFO","message":"Token gerado com sucesso"}
+{"timestamp":"2026-03-06T12:12:26.570Z","level":"INFO","message":"Iniciando geração de token","data":{"payload":{"cid":456},"expiresIn":"1h"}}
+{"timestamp":"2026-03-06T12:12:26.571Z","level":"INFO","message":"Token gerado com sucesso"}
+{"timestamp":"2026-03-06T12:12:26.586Z","level":"INFO","message":"Iniciando geração de token","data":{"payload":{"user":"guest","role":"admin"},"expiresIn":"1h"}}
+{"timestamp":"2026-03-06T12:12:26.588Z","level":"INFO","message":"Token gerado com sucesso"}
+{"timestamp":"2026-03-06T12:12:26.592Z","level":"ERROR","message":"Erro na geração de token","data":{"error":"JWT_SECRET is not defined"}}
+{"timestamp":"2026-03-06T12:12:26.617Z","level":"INFO","message":"test info"}
+{"timestamp":"2026-03-06T12:12:26.617Z","level":"WARN","message":"test warn"}
+{"timestamp":"2026-03-06T12:12:26.618Z","level":"ERROR","message":"test error"}
+{"timestamp":"2026-03-06T12:12:48.381Z","level":"INFO","message":"Iniciando geração de token","data":{"payload":{"user":"test-user","role":"editor"},"expiresIn":"2h"}}
+{"timestamp":"2026-03-06T12:12:48.399Z","level":"INFO","message":"Token gerado com sucesso"}
+{"timestamp":"2026-03-06T12:12:48.420Z","level":"ERROR","message":"Erro na geração de token","data":{"error":"JWT_SECRET is not defined"}}
+{"timestamp":"2026-03-06T12:12:48.423Z","level":"INFO","message":"Iniciando geração de token","data":{"payload":{"id":123,"nested":{"key":"value"},"tags":["a","b"]},"expiresIn":"1h"}}
+{"timestamp":"2026-03-06T12:12:48.430Z","level":"INFO","message":"Token gerado com sucesso"}
+{"timestamp":"2026-03-06T12:12:48.466Z","level":"INFO","message":"Iniciando geração de token","data":{"payload":{"user":"guest","role":"admin"},"expiresIn":"1h"}}
+{"timestamp":"2026-03-06T12:12:48.468Z","level":"INFO","message":"Token gerado com sucesso"}
+{"timestamp":"2026-03-06T12:12:48.479Z","level":"INFO","message":"Iniciando geração de token","data":{"payload":{"cid":456},"expiresIn":"1h"}}
+{"timestamp":"2026-03-06T12:12:48.480Z","level":"INFO","message":"Token gerado com sucesso"}
+{"timestamp":"2026-03-06T12:12:48.499Z","level":"INFO","message":"Iniciando geração de token","data":{"payload":{"user":"guest","role":"admin"},"expiresIn":"1h"}}
+{"timestamp":"2026-03-06T12:12:48.500Z","level":"INFO","message":"Token gerado com sucesso"}
+{"timestamp":"2026-03-06T12:12:48.505Z","level":"ERROR","message":"Erro na geração de token","data":{"error":"JWT_SECRET is not defined"}}
+{"timestamp":"2026-03-06T12:12:48.513Z","level":"INFO","message":"test info"}
+{"timestamp":"2026-03-06T12:12:48.513Z","level":"WARN","message":"test warn"}
+{"timestamp":"2026-03-06T12:12:48.514Z","level":"ERROR","message":"test error"}
