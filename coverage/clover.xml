@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1772799168847" clover="3.2.0">
-  <project timestamp="1772799168848" name="All files">
+<coverage generated="1772799527644" clover="3.2.0">
+  <project timestamp="1772799527644" name="All files">
     <metrics statements="44" coveredstatements="43" conditionals="11" coveredconditionals="10" methods="6" coveredmethods="6" elements="61" coveredelements="59" complexity="0" loc="44" ncloc="44" packages="1" files="2" classes="2"/>
     <file name="index.js" path="/home/guest1user1/Documentos/workspace_antigravity/games/v2/jwt_gen/index.js">
       <metrics statements="31" coveredstatements="30" conditionals="8" coveredconditionals="7" methods="2" coveredmethods="2"/>
