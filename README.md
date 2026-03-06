@@ -40,11 +40,16 @@ O projeto agora conta com uma interface web moderna e intuitiva para geração d
 
 ## 🚀 Procedimentos de Implantação
 
-### Docker
+### Docker (Local)
 ```bash
 docker build -t jwt_gen .
-docker run -e JWT_SECRET=seu_segredo jwt_gen '{"user": "docker-test"}'
+docker run -p 8080:8080 jwt_gen
 ```
+
+### Google Cloud Run
+Para implantar no Google Cloud Run, execute:
+1.  **Build & Push**: `gcloud builds submit --tag gcr.io/[PROJECT-ID]/jwt-gen`
+2.  **Deploy**: `gcloud run deploy jwt-gen --image gcr.io/[PROJECT-ID]/jwt-gen --platform managed --allow-unauthenticated`
 
 ## 🛠 Configuração e Ajustes
 Todas as configurações de expiração e segredo são realizadas via variáveis de ambiente (`.env`).
