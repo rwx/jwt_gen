@@ -323,3 +323,19 @@
 {"timestamp":"2026-03-06T12:18:47.175Z","level":"INFO","message":"test info"}
 {"timestamp":"2026-03-06T12:18:47.176Z","level":"WARN","message":"test warn"}
 {"timestamp":"2026-03-06T12:18:47.176Z","level":"ERROR","message":"test error"}
+{"timestamp":"2026-03-25T13:34:50.929Z","level":"ERROR","message":"Erro na geração de token","data":{"error":"JWT_SECRET is not defined"}}
+{"timestamp":"2026-03-25T15:01:41.292Z","level":"INFO","message":"Iniciando geração de token","data":{"payload":{"user":"test-user","role":"editor"},"expiresIn":"2h"}}
+{"timestamp":"2026-03-25T15:01:41.302Z","level":"INFO","message":"Token gerado com sucesso"}
+{"timestamp":"2026-03-25T15:01:41.321Z","level":"ERROR","message":"Erro na geração de token","data":{"error":"JWT_SECRET is not defined"}}
+{"timestamp":"2026-03-25T15:01:41.325Z","level":"INFO","message":"Iniciando geração de token","data":{"payload":{"id":123,"nested":{"key":"value"},"tags":["a","b"]},"expiresIn":"1h"}}
+{"timestamp":"2026-03-25T15:01:41.328Z","level":"INFO","message":"Token gerado com sucesso"}
+{"timestamp":"2026-03-25T15:01:41.344Z","level":"INFO","message":"Iniciando geração de token","data":{"payload":{"user":"guest","role":"admin"},"expiresIn":"1h"}}
+{"timestamp":"2026-03-25T15:01:41.347Z","level":"INFO","message":"Token gerado com sucesso"}
+{"timestamp":"2026-03-25T15:01:41.355Z","level":"INFO","message":"Iniciando geração de token","data":{"payload":{"cid":456},"expiresIn":"1h"}}
+{"timestamp":"2026-03-25T15:01:41.356Z","level":"INFO","message":"Token gerado com sucesso"}
+{"timestamp":"2026-03-25T15:01:41.364Z","level":"INFO","message":"Iniciando geração de token","data":{"payload":{"user":"guest","role":"admin"},"expiresIn":"1h"}}
+{"timestamp":"2026-03-25T15:01:41.366Z","level":"INFO","message":"Token gerado com sucesso"}
+{"timestamp":"2026-03-25T15:01:41.371Z","level":"ERROR","message":"Erro na geração de token","data":{"error":"JWT_SECRET is not defined"}}
+{"timestamp":"2026-03-25T15:01:41.375Z","level":"INFO","message":"test info"}
+{"timestamp":"2026-03-25T15:01:41.376Z","level":"WARN","message":"test warn"}
+{"timestamp":"2026-03-25T15:01:41.376Z","level":"ERROR","message":"test error"}

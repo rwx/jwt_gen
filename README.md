@@ -1,14 +1,13 @@
 # Gerador de Tokens JWT v2.0.0
 
 ## 📝 Propósito
-Este é um utilitário profissional para geração de JSON Web Tokens (JWT) seguindo padrões de segurança e logging estruturado. Inclui uma CLI robusta e uma interface Web moderna.
+Este é um utilitário profissional para geração de JSON Web Tokens (JWT) seguindo padrões de segurança e logging estruturado. Consiste em uma interface Web moderna exposta na porta 8080.
 
 ---
 
 ## 📖 Manual do Usuário
-O sistema permite gerar tokens JWT assinados via HS256. 
-- **CLI**: Ideal para automação e scripts.
-- **Web**: Interface amigável para testes rápidos e visualização.
+O sistema permite gerar tokens JWT assinados via HS256.
+A aplicação expõe sua **Interface Web** de forma nativa e direta (default) na porta 8080. O foco é garantir um ambiente amigável para testes rápidos e visualização de tokens (UI/UX premium).
 
 ### Requisitos
 - Node.js 20+
@@ -22,9 +21,9 @@ O sistema permite gerar tokens JWT assinados via HS256.
 ---
 
 ## 🌐 Interface Web
-Acesse a interface premium para uma experiência completa:
-- `npm run web:dev` (Desenvolvimento)
-- O servidor rodará em `http://localhost:5173`.
+Acesse a interface premium carregada pelo Express na porta `8080`:
+- Basta executar: `npm start` e abrir no navegador: `http://localhost:8080`.
+- Ocasionalmente em desenvolvimento do frontend use `npm run web:dev`.
 
 ---
 
@@ -53,7 +52,11 @@ kubectl apply -f k8s.yaml
 
 ### ☁️ Google Cloud Run
 ```bash
-gcloud builds submit --tag gcr.io/[PROJECT-ID]/jwt-gen
+# Opção 1: Deploy direto pelo código-fonte (Recomendado - não exige [PROJECT-ID] manual na URL)
+gcloud run deploy jwt-gen --source . --platform managed --allow-unauthenticated
+
+# Opção 2: Build manual via Artifact/Container Registry
+gcloud builds submit --tag gcr.io/[PROJECT-ID]/jwt-gen .
 gcloud run deploy jwt-gen --image gcr.io/[PROJECT-ID]/jwt-gen --platform managed --allow-unauthenticated
 ```
 
@@ -82,9 +85,9 @@ A aplicação é altamente customizável via variáveis de ambiente e arquivos d
 ---
 
 ## 📂 Dicionário de Arquivos (RNF.05.05)
-- `index.js`: Lógica principal da CLI.
+- `server.js`: Servidor Express de produção e porta de entrada principal 8080.
+- `index.js`: Lógica legado/rotinas internas.
 - `logger.js`: Sistema de logs estruturados (JSON).
-- `server.js`: Servidor Express de produção.
 - `Dockerfile`: Configuração multi-estágio para containerização.
 - `docker-compose.yml`: Orquestração local.
 - `k8s.yaml`: Manifesto para clusters Kubernetes.
